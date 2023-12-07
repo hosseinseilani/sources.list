@@ -251,8 +251,7 @@ deb-src http://deb.parrotsec.org/parrot stable main contrib non-free
 
 # or
 
-deb https://deb.parrot.sh/parrot/ parrot main contrib non-free
-
+deb https://deb.parrot.sh/parrot/ parrot main contrib non-free[^2]: 
 deb-src https://deb.parrot.sh/parrot/ parrot main contrib non-free
 deb https://deb.parrot.sh/parrot/ parrot-security main contrib non-free
 deb-src https://deb.parrot.sh/parrot/ parrot-security main contrib non-free
