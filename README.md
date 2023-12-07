@@ -231,9 +231,6 @@ deb-src http://security.ubuntu.com/ubuntu bionic-security universe
 deb http://security.ubuntu.com/ubuntu bionic-security multiverse
 deb-src http://security.ubuntu.com/ubuntu bionic-security multiverse
 
-
-
-
 # kali
 # kali-rolling branch 
 deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware
