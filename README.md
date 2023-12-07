@@ -247,8 +247,9 @@ deb http://http.kali.org/kali kali-experimental main contrib non-free non-free-f
 # kali-bleeding-edge branch 
 deb http://http.kali.org/kali kali-bleeding-edge main contrib non-free non-free-firmware
 
+
 # parrot linux
-deb http://deb.parrotsec.org/parrot stable main contrib non-free 
+deb http://deb.parrotsec.org/parrot stable main contrib non-free
 deb-src http://deb.parrotsec.org/parrot stable main contrib non-free
 
 # or
