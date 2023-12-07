@@ -22,39 +22,27 @@ By editing the sources.list file, you can add, remove, or modify repository entr
 The package resource list is used to locate archives of the package distribution system in use on the system. This control file is located in /etc/apt/sources.list and additionally any files ending with ".list" in /etc/apt/sources.list.d are included.
 The source list is designed to support any number of active sources and a variety of source media. The file lists one source per line, with the most preferred source listed first. The format of each line is: type uri args. The first item, type, determines the format for args. uri is a Universal Resource Identifier (URI), which is a superset of the more specific and well-known Universal Resource Locator, or URL. The rest of the line can be marked as a comment by using a #.
 
-To edit the sources.list file in Linux, you can follow these steps:
+
+# To edit the sources.list file in Linux, you can follow these steps:
 # Modifying sources.list with nano:
-Open a terminal window on your Linux system.
-
-Type the following command to open the sources.list file in a text editor with root privileges:
-
+1. Open a terminal window on your Linux system.
+2. Type the following command to open the sources.list file in a text editor with root privileges:
 sudo nano /etc/apt/sources.list
-This command will open the sources.list file in the nano text editor with root privileges, allowing you to make changes to the file.
 
-Use the arrow keys to navigate to the line you want to edit or add a new line to the file.
-
-Make the necessary changes to the file using the text editor.
-
-Press Ctrl+O to save the changes to the file.
-
-Press Ctrl+X to exit the text editor.
+3. This command will open the sources.list file in the nano text editor with root privileges, allowing you to make changes to the file.
+4. Use the arrow keys to navigate to the line you want to edit or add a new line to the file.
+5. Make the necessary changes to the file using the text editor.
+6. Press Ctrl+O to save the changes to the file.
+7. Press Ctrl+X to exit the text editor.
 
 
 # main sources.list file of Linux distros 
-
-
 # Modyfiying sources.list with vim.
 To edit the sources.list file with vim, you can follow these steps:
-
 1. Open the terminal on your Linux system.
 2. Type the following command to open the sources.list file in vim: 
-
-   ```
    sudo vim /etc/apt/sources.list
-   ```
-
-   This will open the sources.list file with root privileges, which is necessary to make changes to the file.
-
+This will open the sources.list file with root privileges, which is necessary to make changes to the file.
 3. Use the arrow keys to move the cursor to the line you want to edit.
 4. Press the `i` key to enter insert mode, which allows you to make changes to the file.
 5. Make the necessary changes to the file, using the vim editor.
@@ -65,30 +53,32 @@ That's it! Your changes should now be saved to the sources.list file.
 
 # Modyfiying sources.list with vim.
 To edit the sources.list file with Geany, you can follow these steps:
-Install geany from default package manager:
-Ubuntu or Debian-based distributions:
+1. Install geany from default package manager:
+2. Ubuntu or Debian-based distributions:
 sudo apt-get install geany
-Fedora:
 
+3. Fedora:
 sudo dnf install geany
-CentOS or RHEL:
+
+4. CentOS or RHEL:
 sudo yum install geany
-Arch Linux:
+
+5. Arch Linux:
 sudo pacman -S geany
+
 Then run sudo geany
 
-Open Geany text editor on your Linux system.
-In Geany, click on "File" in the menu bar and select "Open".
-Navigate to the /etc/apt/ directory where the sources.list file is located.
-Select the sources.list file and click "Open".
-The file will open in Geany, and you can make any necessary changes to the repository URLs.
-Once you have made your changes, click on "File" in the menu bar and select "Save" to save the modified file.
-Please note that editing the sources.list file requires root privileges, so you may need to use sudo or switch to the root user before making any changes. Additionally, it's a good practice to create a backup of the original sources.list file before making any modifications.
+6. Open Geany text editor on your Linux system.
+7. In Geany, click on "File" in the menu bar and select "Open".
+8. Navigate to the /etc/apt/ directory where the sources.list file is located.
+9. Select the sources.list file and click "Open".
+10. The file will open in Geany, and you can make any necessary changes to the repository URLs.
+11. Once you have made your changes, click on "File" in the menu bar and select "Save" to save the modified file.
+12. Please note that editing the sources.list file requires root privileges, so you may need to use sudo or switch to the root user before making any changes. Additionally, it's a good practice to create a backup of the original sources.list 13. file before making any modifications.
 
 # Debian 
 # Debian 12 (Bookworm ) -- Full sources.list
-
-  
+ 
 deb http://deb.debian.org/debian bookworm main non-free-firmware
 deb-src http://deb.debian.org/debian bookworm main non-free-firmware
 
@@ -139,8 +129,6 @@ deb-src http://deb.debian.org/debian bullseye-backports main contrib non-free
 deb http://security.debian.org/debian-security/ bullseye-security main contrib non-free
 deb-src http://security.debian.org/debian-security/ bullseye-security main contrib non-free
 
-
-
 # debian10
 deb http://deb.debian.org/debian buster main contrib non-free
 deb-src http://deb.debian.org/debian buster main contrib non-free
@@ -155,7 +143,7 @@ deb http://security.debian.org/debian-security/ buster/updates main contrib non-
 deb-src http://security.debian.org/debian-security/ buster/updates main contrib non-free
 
 
-# main without codename
+# main without a codename
 
 deb http://deb.debian.org/debian/ stable main non-free non-free-firmware contrib
 deb-src http://deb.debian.org/debian/ stable main non-free non-free-firmware contrib
@@ -166,9 +154,7 @@ deb-src http://deb.debian.org/debian/ testing main non-free non-free-firmware co
 deb http://deb.debian.org/debian-security stable-security main contrib non-free non-free-firmware
 deb-src http://deb.debian.org/debian-security stable-security main contrib non-free non-free-firmware
 
-
-
-Debian Sid (Unstable) complete sources.list
+# Debian Sid (Unstable) complete sources.list
 
 deb http://ftp.us.debian.org/debian/ sid main contrib non-free
 deb-src http://ftp.us.debian.org/debian/ sid main
@@ -182,7 +168,6 @@ deb-src http://ftp.us.debian.org/debian/ testing main
 
 deb http://archive.ubuntu.com/ubuntu/ noble main restricted
 deb http://archive.ubuntu.com/ubuntu/ noble-updates main restricted
-
 
 deb http://archive.ubuntu.com/ubuntu/ noble universe
 deb-src http://archive.ubuntu.com/ubuntu/ noble universe
@@ -281,7 +266,7 @@ deb http://http.kali.org/kali kali-bleeding-edge main contrib non-free non-free-
 deb http://deb.parrotsec.org/parrot stable main contrib non-free 
 deb-src http://deb.parrotsec.org/parrot stable main contrib non-free
 
-or
+# or
 
 deb https://deb.parrot.sh/parrot/ parrot main contrib non-free
 deb-src https://deb.parrot.sh/parrot/ parrot main contrib non-free
