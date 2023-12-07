@@ -65,15 +65,14 @@ Then run sudo geany
 # Debian 
 # Debian 12 (Bookworm ) -- Full sources.list
  
-deb http://deb.debian.org/debian bookworm main non-free-firmware
-deb-src http://deb.debian.org/debian bookworm main non-free-firmware
+deb http://deb.debian.org/debian bookworm main non-free-firmware 
+deb-src http://deb.debian.org/debian bookworm main non-free-firmware 
 
-deb http://deb.debian.org/debian-security/ bookworm-security main non-free-firmware
-deb-src http://deb.debian.org/debian-security/ bookworm-security main non-free-firmware
+deb http://deb.debian.org/debian-security/ bookworm-security main non-free-firmware 
+deb-src http://deb.debian.org/debian-security/ bookworm-security main non-free-firmware 
 
-deb http://deb.debian.org/debian bookworm-updates main non-free-firmware
-deb-src http://deb.debian.org/debian bookworm-updates main non-free-firmware
-
+deb http://deb.debian.org/debian bookworm-updates main non-free-firmware 
+deb-src http://deb.debian.org/debian bookworm-updates main non-free-firmware 
 # debian 12 contrib
 deb http://deb.debian.org/debian/ bookworm contrib main non-free non-free-firmware
 deb-src http://deb.debian.org/debian/ bookworm contrib main non-free non-free-firmware
