@@ -3,24 +3,12 @@
 In Linux, the sources.list file is a configuration file that software repositories use for package installation and updates. It is commonly found in the /etc/apt/ directory.
 
 The sources.list file contains a list of URLs or repository addresses where the package manager can find software packages. These repositories may be maintained by the Linux distribution itself or by third-party individuals or organizations.
-By editing the sources.list file, you can add, remove, or modify repository entries to control which software packages are available for installation on your Linux system. It is important to be cautious when modifying this file, as incorrect changes can lead to issues with package management.
-
-
-The package resource list is used to locate archives of the package distribution system in use on the system. This control file is located in /etc/apt/sources.list and additionally any files ending with ".list" in /etc/apt/sources.list.d are included.
-The source list is designed to support any number of active sources and a variety of source media. The file lists one source per line, with the most preferred source listed first. The format of each line is: type uri args. The first item, type, determines the format for args. uri is a Universal Resource Identifier (URI), which is a superset of the more specific and well-known Universal Resource Locator, or URL. The rest of the line can be marked as a comment by using a #.
-
-# main sources.list file of Linux distros 
-
-# The complete Linux distro sources.list
-
+By editing the sources.list file, you can add, remove, or modify repository entries to control which software packages are available for installation on your Linux system. It is important to be cautious when modifying this file, as incorrect changes can lead to issues with package management. 
+The package resource list is used to locate archives of the package distribution system in use on the system. This control file is located in /etc/apt/sources.list and additionally any files ending with ".list" in /etc/apt/sources.list.d are included. The source list is designed to support any number of active sources and a variety of source media. The file lists one source per line, with the most preferred source listed first. The format of each line is: type uri args. The first item, type, determines the format for args. uri is a Universal Resource Identifier (URI), which is a superset of the more specific and well-known Universal Resource Locator, or URL. The rest of the line can be marked as a comment by using a #.
 In Linux, the sources.list file is a configuration file that software repositories use for package installation and updates. It is commonly found in the /etc/apt/ directory.
 
 The sources.list file contains a list of URLs or repository addresses where the package manager can find software packages. These repositories may be maintained by the Linux distribution itself or by third-party individuals or organizations.
-By editing the sources.list file, you can add, remove, or modify repository entries to control which software packages are available for installation on your Linux system. It is important to be cautious when modifying this file, as incorrect changes can lead to issues with package management.
-
-
-The package resource list is used to locate archives of the package distribution system in use on the system. This control file is located in /etc/apt/sources.list and additionally any files ending with ".list" in /etc/apt/sources.list.d are included.
-The source list is designed to support any number of active sources and a variety of source media. The file lists one source per line, with the most preferred source listed first. The format of each line is: type uri args. The first item, type, determines the format for args. uri is a Universal Resource Identifier (URI), which is a superset of the more specific and well-known Universal Resource Locator, or URL. The rest of the line can be marked as a comment by using a #.
+By editing the sources.list file, you can add, remove, or modify repository entries to control which software packages are available for installation on your Linux system. It is important to be cautious when modifying this file, as incorrect changes can lead to issues with package management. The package resource list is used to locate archives of the package distribution system in use on the system. This control file is located in /etc/apt/sources.list and additionally any files ending with ".list" in /etc/apt/sources.list.d are included. The source list is designed to support any number of active sources and a variety of source media. The file lists one source per line, with the most preferred source listed first. The format of each line is: type uri args. The first item, type, determines the format for args. uri is a Universal Resource Identifier (URI), which is a superset of the more specific and well-known Universal Resource Locator, or URL. The rest of the line can be marked as a comment by using a #.
 
 
 # To edit the sources.list file in Linux, you can follow these steps:
@@ -35,8 +23,6 @@ sudo nano /etc/apt/sources.list
 6. Press Ctrl+O to save the changes to the file.
 7. Press Ctrl+X to exit the text editor.
 
-
-# main sources.list file of Linux distros 
 # Modyfiying sources.list with vim.
 To edit the sources.list file with vim, you can follow these steps:
 1. Open the terminal on your Linux system.
@@ -51,7 +37,7 @@ This will open the sources.list file with root privileges, which is necessary to
 
 That's it! Your changes should now be saved to the sources.list file.
 
-# Modyfiying sources.list with vim.
+# Modyfiying sources.list with geany editor.
 To edit the sources.list file with Geany, you can follow these steps:
 1. Install geany from default package manager:
 2. Ubuntu or Debian-based distributions:
@@ -143,8 +129,7 @@ deb http://security.debian.org/debian-security/ buster/updates main contrib non-
 deb-src http://security.debian.org/debian-security/ buster/updates main contrib non-free
 
 
-# main without a codename
-
+# Debian main without a codename
 deb http://deb.debian.org/debian/ stable main non-free non-free-firmware contrib
 deb-src http://deb.debian.org/debian/ stable main non-free non-free-firmware contrib
 
@@ -154,7 +139,7 @@ deb-src http://deb.debian.org/debian/ testing main non-free non-free-firmware co
 deb http://deb.debian.org/debian-security stable-security main contrib non-free non-free-firmware
 deb-src http://deb.debian.org/debian-security stable-security main contrib non-free non-free-firmware
 
-# Debian Sid (Unstable) complete sources.list
+# Debian Sid (Unstable)
 
 deb http://ftp.us.debian.org/debian/ sid main contrib non-free
 deb-src http://ftp.us.debian.org/debian/ sid main
