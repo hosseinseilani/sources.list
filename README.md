@@ -276,14 +276,21 @@ deb-src https://deb.parrot.sh/parrot parrot-backports main contrib non-free
 
 # PureOS byzantium codename
 deb https://repo.pureos.net/pureos byzantium main
+
 deb https://repo.pureos.net/pureos byzantium-updates main
+
 deb https://repo.pureos.net/pureos byzantium-security main
 
 # PureOS amber codename
 deb https://repo.pureos.net/pureos amber main
+
 deb https://repo.pureos.net/pureos amber-updates main
+
 deb https://repo.pureos.net/pureos amber-security main
 
 #  PureOS crimson codename
+deb https://repo.pureos.net/pureos crimson main
 
+deb https://repo.pureos.net/pureos crimson-updates main
 
+deb https://repo.pureos.net/pureos crimson-security main
