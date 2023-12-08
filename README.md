@@ -197,19 +197,26 @@ deb http://ports.ubuntu.com/ubuntu-ports focal-security main restricted universe
 deb-src http://ports.ubuntu.com/ubuntu-ports focal-security main restricted universe multiverse
 
 deb http://archive.canonical.com/ubuntu focal partner
+
 deb-src http://archive.canonical.com/ubuntu focal partner
+
 
 # Ubuntu 18.04 LTS
 
 deb http://us.archive.ubuntu.com/ubuntu/ bionic main restricted
+
 deb-src http://us.archive.ubuntu.com/ubuntu/ bionic main restricted
 
 deb http://us.archive.ubuntu.com/ubuntu/ bionic-updates main restricted
+
 deb-src http://us.archive.ubuntu.com/ubuntu/ bionic-updates main restricted
 
 deb http://us.archive.ubuntu.com/ubuntu/ bionic universe
+
 deb-src http://us.archive.ubuntu.com/ubuntu/ bionic universe
+
 deb http://us.archive.ubuntu.com/ubuntu/ bionic-updates universe
+
 deb-src http://us.archive.ubuntu.com/ubuntu/ bionic-updates universe
 
 deb http://us.archive.ubuntu.com/ubuntu/ bionic multiverse
