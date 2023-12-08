@@ -27,7 +27,7 @@ sudo nano /etc/apt/sources.list
 To edit the sources.list file with vim, you can follow these steps:
 1. Open the terminal on your Linux system.
 2. Type the following command to open the sources.list file in vim: 
-   sudo vim /etc/apt/sources.list
+sudo vim /etc/apt/sources.list
 This will open the sources.list file with root privileges, which is necessary to make changes to the file.
 3. Use the arrow keys to move the cursor to the line you want to edit.
 4. Press the `i` key to enter insert mode, which allows you to make changes to the file.
@@ -64,15 +64,15 @@ Then run sudo geany
 
 # Debian 
 # Debian 12 (Bookworm ) -- Full sources.list
- 
+
 deb http://deb.debian.org/debian bookworm main non-free-firmware 
 deb-src http://deb.debian.org/debian bookworm main non-free-firmware 
 
 deb http://deb.debian.org/debian-security/ bookworm-security main non-free-firmware 
 deb-src http://deb.debian.org/debian-security/ bookworm-security main non-free-firmware 
 
-deb http://deb.debian.org/debian bookworm-updates main non-free-firmware 
-deb-src http://deb.debian.org/debian bookworm-updates main non-free-firmware 
+deb http://deb.debian.org/debian bookworm-updates main non-free-firmware
+deb-src http://deb.debian.org/debian bookworm-updates main non-free-firmware
 # debian 12 contrib
 deb http://deb.debian.org/debian/ bookworm contrib main non-free non-free-firmware
 deb-src http://deb.debian.org/debian/ bookworm contrib main non-free non-free-firmware
@@ -142,7 +142,7 @@ deb-src http://deb.debian.org/debian-security stable-security main contrib non-f
 
 deb http://ftp.us.debian.org/debian/ sid main contrib non-free
 deb-src http://ftp.us.debian.org/debian/ sid main
- 
+
 deb http://ftp.us.debian.org/debian/ testing main contrib non-free
 deb-src http://ftp.us.debian.org/debian/ testing main
 
@@ -213,21 +213,32 @@ deb http://us.archive.ubuntu.com/ubuntu/ bionic-updates universe
 deb-src http://us.archive.ubuntu.com/ubuntu/ bionic-updates universe
 
 deb http://us.archive.ubuntu.com/ubuntu/ bionic multiverse
+
 deb-src http://us.archive.ubuntu.com/ubuntu/ bionic multiverse
+
 deb http://us.archive.ubuntu.com/ubuntu/ bionic-updates multiverse
+
 deb-src http://us.archive.ubuntu.com/ubuntu/ bionic-updates multiverse
 
+
 deb http://us.archive.ubuntu.com/ubuntu/ bionic-backports main restricted universe multiverse
+
 deb-src http://us.archive.ubuntu.com/ubuntu/ bionic-backports main restricted universe multiverse
 
 deb http://archive.canonical.com/ubuntu bionic partner
+
 deb-src http://archive.canonical.com/ubuntu bionic partner
 
 deb http://security.ubuntu.com/ubuntu bionic-security main restricted
+
 deb-src http://security.ubuntu.com/ubuntu bionic-security main restricted
+
 deb http://security.ubuntu.com/ubuntu bionic-security universe
+
 deb-src http://security.ubuntu.com/ubuntu bionic-security universe
+
 deb http://security.ubuntu.com/ubuntu bionic-security multiverse
+
 deb-src http://security.ubuntu.com/ubuntu bionic-security multiverse
 
 # kali
@@ -246,6 +257,7 @@ deb http://http.kali.org/kali kali-bleeding-edge main contrib non-free non-free-
 
 # parrot linux
 deb http://deb.parrotsec.org/parrot stable main contrib non-free
+
 deb-src http://deb.parrotsec.org/parrot stable main contrib non-free
 
 # or
@@ -261,3 +273,17 @@ deb-src https://deb.parrot.sh/parrot/ parrot-security main contrib non-free
 deb https://deb.parrot.sh/parrot parrot-backports main contrib non-free
 
 deb-src https://deb.parrot.sh/parrot parrot-backports main contrib non-free
+
+# PureOS byzantium codename
+deb https://repo.pureos.net/pureos byzantium main
+deb https://repo.pureos.net/pureos byzantium-updates main
+deb https://repo.pureos.net/pureos byzantium-security main
+
+# PureOS amber codename
+deb https://repo.pureos.net/pureos amber main
+deb https://repo.pureos.net/pureos amber-updates main
+deb https://repo.pureos.net/pureos amber-security main
+
+#  PureOS crimson codename
+
+
