@@ -43,17 +43,21 @@ That's it! Your changes should now be saved to the sources.list file.
 To edit the sources.list file with Geany, you can follow these steps:
 1. Install geany from default package manager:
 2. Ubuntu or Debian-based distributions:
+
 ```bash
 sudo apt-get install geany
 ```
 4. Fedora:
+
 ```bash
 sudo dnf install geany
 ```
 6. CentOS or RHEL:
+
 ```bash
 sudo yum install geany
 ```
+
 7. Arch Linux:
 ```bash
 sudo pacman -S geany
@@ -70,6 +74,7 @@ Then run sudo geany
 
 # Debian 
 ## Debian 12 (Bookworm ) -- Full sources.list
+
 ```bash
 deb http://deb.debian.org/debian bookworm main non-free-firmware 
 deb-src http://deb.debian.org/debian bookworm main non-free-firmware 
@@ -82,6 +87,7 @@ deb-src http://deb.debian.org/debian bookworm-updates main non-free-firmware
 ```
 
 # debian 12 contrib
+
 ```bash
 deb http://deb.debian.org/debian/ bookworm contrib main non-free non-free-firmware
 deb-src http://deb.debian.org/debian/ bookworm contrib main non-free non-free-firmware
