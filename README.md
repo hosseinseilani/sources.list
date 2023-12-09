@@ -1,4 +1,3 @@
-
 # The complete Linux distro sources.list
 
 In Linux, the sources.list file is a configuration file that software repositories use for package installation and updates. It is commonly found in the /etc/apt/ directory.The sources.list file contains a list of URLs or repository addresses where the package manager can find software packages. These repositories may be maintained by the Linux distribution itself or by third-party individuals or organizations.
