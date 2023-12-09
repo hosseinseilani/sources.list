@@ -1,3 +1,4 @@
+
 # The complete Linux distro sources.list
 
 In Linux, the sources.list file is a configuration file that software repositories use for package installation and updates. It is commonly found in the /etc/apt/ directory.
@@ -12,7 +13,7 @@ By editing the sources.list file, you can add, remove, or modify repository entr
 
 
 # To edit the sources.list file in Linux, you can follow these steps:
-# Modifying sources.list with nano:
+## Modifying sources.list with nano:
 1. Open a terminal window on your Linux system.
 2. Type the following command to open the sources.list file in a text editor with root privileges:
 sudo nano /etc/apt/sources.list
@@ -23,7 +24,7 @@ sudo nano /etc/apt/sources.list
 6. Press Ctrl+O to save the changes to the file.
 7. Press Ctrl+X to exit the text editor.
 
-# Modyfiying sources.list with vim.
+## Modyfiying sources.list with vim.
 To edit the sources.list file with vim, you can follow these steps:
 1. Open the terminal on your Linux system.
 2. Type the following command to open the sources.list file in vim: 
@@ -37,7 +38,7 @@ This will open the sources.list file with root privileges, which is necessary to
 
 That's it! Your changes should now be saved to the sources.list file.
 
-# Modyfiying sources.list with geany editor.
+## Modyfiying sources.list with geany editor.
 To edit the sources.list file with Geany, you can follow these steps:
 1. Install geany from default package manager:
 2. Ubuntu or Debian-based distributions:
@@ -63,7 +64,7 @@ Then run sudo geany
 12. Please note that editing the sources.list file requires root privileges, so you may need to use sudo or switch to the root user before making any changes. Additionally, it's a good practice to create a backup of the original sources.list 13. file before making any modifications.
 
 # Debian 
-# Debian 12 (Bookworm ) -- Full sources.list
+## Debian 12 (Bookworm ) -- Full sources.list
 
 deb http://deb.debian.org/debian bookworm main non-free-firmware 
 deb-src http://deb.debian.org/debian bookworm main non-free-firmware 
@@ -90,18 +91,21 @@ deb http://deb.debian.org/debian-security/ bookworm-security contrib main non-fr
 deb-src http://deb.debian.org/debian-security/ bookworm-security contrib main non-free non-free-firmware
 
 
-# Debian 11 main stable
+## Debian 11 main stable
 deb http://deb.debian.org/debian bullseye main
+
 deb-src http://deb.debian.org/debian bullseye main
 
 deb http://deb.debian.org/debian-security/ bullseye-security main
+
 deb-src http://deb.debian.org/debian-security/ bullseye-security main
 
 deb http://deb.debian.org/debian bullseye-updates main
+
 deb-src http://deb.debian.org/debian bullseye-updates main
 
 
-# debian 11 contrib non-free
+## debian 11 contrib non-free
 deb http://deb.debian.org/debian bullseye main contrib non-free
 deb-src http://deb.debian.org/debian bullseye main contrib non-free
 
@@ -114,7 +118,7 @@ deb-src http://deb.debian.org/debian bullseye-backports main contrib non-free
 deb http://security.debian.org/debian-security/ bullseye-security main contrib non-free
 deb-src http://security.debian.org/debian-security/ bullseye-security main contrib non-free
 
-# debian10
+## debian10
 deb http://deb.debian.org/debian buster main contrib non-free
 deb-src http://deb.debian.org/debian buster main contrib non-free
 
@@ -128,7 +132,7 @@ deb http://security.debian.org/debian-security/ buster/updates main contrib non-
 deb-src http://security.debian.org/debian-security/ buster/updates main contrib non-free
 
 
-# Debian main without a codename
+## Debian main without a codename
 deb http://deb.debian.org/debian/ stable main non-free non-free-firmware contrib
 deb-src http://deb.debian.org/debian/ stable main non-free non-free-firmware contrib
 
@@ -138,7 +142,7 @@ deb-src http://deb.debian.org/debian/ testing main non-free non-free-firmware co
 deb http://deb.debian.org/debian-security stable-security main contrib non-free non-free-firmware
 deb-src http://deb.debian.org/debian-security stable-security main contrib non-free non-free-firmware
 
-# Debian Sid (Unstable)
+## Debian Sid (Unstable)
 
 deb http://ftp.us.debian.org/debian/ sid main contrib non-free
 deb-src http://ftp.us.debian.org/debian/ sid main
@@ -148,7 +152,7 @@ deb-src http://ftp.us.debian.org/debian/ testing main
 
 
 # Ubuntu 
-# Ubuntu 24.04 LTS
+## Ubuntu 24.04 LTS
 
 deb http://archive.ubuntu.com/ubuntu/ noble main restricted
 deb http://archive.ubuntu.com/ubuntu/ noble-updates main restricted
@@ -167,7 +171,7 @@ deb-src http://security.ubuntu.com/ubuntu/ noble-security universe
 deb http://security.ubuntu.com/ubuntu/ noble-security multiverse
 deb-src http://security.ubuntu.com/ubuntu/ noble-security multiverse
 
-# ubuntu 22.04 LTS
+## ubuntu 22.04 LTS
 deb http://archive.ubuntu.com/ubuntu/ jammy main restricted universe multiverse
 deb-src http://archive.ubuntu.com/ubuntu/ jammy main restricted universe multiverse
 
@@ -183,7 +187,7 @@ deb-src http://archive.ubuntu.com/ubuntu/ jammy-backports main restricted univer
 deb http://archive.canonical.com/ubuntu jammy partner
 deb-src http://archive.canonical.com/ubuntu jammy partner
 
-# Ubuntu 20.04 LTS
+## Ubuntu 20.04 LTS
 deb http://ports.ubuntu.com/ubuntu-ports focal main restricted universe multiverse
 deb-src http://ports.ubuntu.com/ubuntu-ports focal main restricted universe multiverse
 
@@ -201,7 +205,7 @@ deb http://archive.canonical.com/ubuntu focal partner
 deb-src http://archive.canonical.com/ubuntu focal partner
 
 
-# Ubuntu 18.04 LTS
+## Ubuntu 18.04 LTS
 
 deb http://us.archive.ubuntu.com/ubuntu/ bionic main restricted
 
@@ -249,16 +253,16 @@ deb http://security.ubuntu.com/ubuntu bionic-security multiverse
 deb-src http://security.ubuntu.com/ubuntu bionic-security multiverse
 
 # kali
-# kali-rolling branch 
+## kali-rolling branch 
 deb http://http.kali.org/kali kali-rolling main contrib non-free non-free-firmware
 
-# kali-last-snapshot branch 
+## kali-last-snapshot branch 
 deb http://http.kali.org/kali kali-last-snapshot main contrib non-free non-free-firmware
 
-# kali-experimental branch 
+## kali-experimental branch 
 deb http://http.kali.org/kali kali-experimental main contrib non-free non-free-firmware
 
-# kali-bleeding-edge branch 
+## kali-bleeding-edge branch 
 deb http://http.kali.org/kali kali-bleeding-edge main contrib non-free non-free-firmware
 
 
@@ -281,23 +285,31 @@ deb https://deb.parrot.sh/parrot parrot-backports main contrib non-free
 
 deb-src https://deb.parrot.sh/parrot parrot-backports main contrib non-free
 
-# PureOS byzantium codename
+
+
+# PureOS 
+## PureOS byzantium codename
 deb https://repo.pureos.net/pureos byzantium main
 
 deb https://repo.pureos.net/pureos byzantium-updates main
 
 deb https://repo.pureos.net/pureos byzantium-security main
 
-# PureOS amber codename
+## PureOS amber codename
 deb https://repo.pureos.net/pureos amber main
 
 deb https://repo.pureos.net/pureos amber-updates main
 
 deb https://repo.pureos.net/pureos amber-security main
 
-#  PureOS crimson codename
+## PureOS crimson codename
 deb https://repo.pureos.net/pureos crimson main
 
 deb https://repo.pureos.net/pureos crimson-updates main
 
 deb https://repo.pureos.net/pureos crimson-security main
+
+
+
+## Authors
+- [@hossein seilani](https://www.seilany.ir)
