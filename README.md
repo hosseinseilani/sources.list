@@ -12,6 +12,10 @@ The sources.list file contains a list of URLs or repository addresses where the 
 By editing the sources.list file, you can add, remove, or modify repository entries to control which software packages are available for installation on your Linux system. It is important to be cautious when modifying this file, as incorrect changes can lead to issues with package management. The package resource list is used to locate archives of the package distribution system in use on the system. This control file is located in /etc/apt/sources.list and additionally any files ending with ".list" in /etc/apt/sources.list.d are included. The source list is designed to support any number of active sources and a variety of source media. The file lists one source per line, with the most preferred source listed first. The format of each line is: type uri args. The first item, type, determines the format for args. uri is a Universal Resource Identifier (URI), which is a superset of the more specific and well-known Universal Resource Locator, or URL. The rest of the line can be marked as a comment by using a #.
 
 
+## Badges
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+
+
 # To edit the sources.list file in Linux, you can follow these steps:
 ## Modifying sources.list with nano:
 1. Open a terminal window on your Linux system.
@@ -74,6 +78,7 @@ deb-src http://deb.debian.org/debian-security/ bookworm-security main non-free-f
 
 deb http://deb.debian.org/debian bookworm-updates main non-free-firmware
 deb-src http://deb.debian.org/debian bookworm-updates main non-free-firmware
+
 # debian 12 contrib
 deb http://deb.debian.org/debian/ bookworm contrib main non-free non-free-firmware
 deb-src http://deb.debian.org/debian/ bookworm contrib main non-free non-free-firmware
@@ -93,15 +98,10 @@ deb-src http://deb.debian.org/debian-security/ bookworm-security contrib main no
 
 ## Debian 11 main stable
 deb http://deb.debian.org/debian bullseye main
-
 deb-src http://deb.debian.org/debian bullseye main
-
 deb http://deb.debian.org/debian-security/ bullseye-security main
-
 deb-src http://deb.debian.org/debian-security/ bullseye-security main
-
 deb http://deb.debian.org/debian bullseye-updates main
-
 deb-src http://deb.debian.org/debian bullseye-updates main
 
 
@@ -173,18 +173,23 @@ deb-src http://security.ubuntu.com/ubuntu/ noble-security multiverse
 
 ## ubuntu 22.04 LTS
 deb http://archive.ubuntu.com/ubuntu/ jammy main restricted universe multiverse
+
 deb-src http://archive.ubuntu.com/ubuntu/ jammy main restricted universe multiverse
 
 deb http://archive.ubuntu.com/ubuntu/ jammy-updates main restricted universe multiverse
+
 deb-src http://archive.ubuntu.com/ubuntu/ jammy-updates main restricted universe multiverse
 
 deb http://archive.ubuntu.com/ubuntu/ jammy-security main restricted universe multiverse
+
 deb-src http://archive.ubuntu.com/ubuntu/ jammy-security main restricted universe multiverse
 
 deb http://archive.ubuntu.com/ubuntu/ jammy-backports main restricted universe multiverse
+
 deb-src http://archive.ubuntu.com/ubuntu/ jammy-backports main restricted universe multiverse
 
 deb http://archive.canonical.com/ubuntu jammy partner
+
 deb-src http://archive.canonical.com/ubuntu jammy partner
 
 ## Ubuntu 20.04 LTS
