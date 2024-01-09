@@ -71,6 +71,45 @@ Then run sudo geany
 11. Once you have made your changes, click on "File" in the menu bar and select "Save" to save the modified file.
 12. Please note that editing the sources.list file requires root privileges, so you may need to use sudo or switch to the root user before making any changes. Additionally, it's a good practice to create a backup of the sources.list 13. file before making any modifications.
 
+# Predator-os 
+## predator-os v2.5
+```bash
+deb http://ports.ubuntu.com/ubuntu-ports focal main restricted universe multiverse
+deb-src http://ports.ubuntu.com/ubuntu-ports focal main restricted universe multiverse
+
+deb http://ports.ubuntu.com/ubuntu-ports focal-updates main restricted universe multiverse
+deb-src http://ports.ubuntu.com/ubuntu-ports focal-updates main restricted universe multiverse
+
+deb http://ports.ubuntu.com/ubuntu-ports focal-backports main restricted universe multiverse
+deb-src http://ports.ubuntu.com/ubuntu-ports focal-backports main restricted universe multiverse
+
+deb http://ports.ubuntu.com/ubuntu-ports focal-security main restricted universe multiverse
+deb-src http://ports.ubuntu.com/ubuntu-ports focal-security main restricted universe multiverse
+
+deb http://archive.canonical.com/ubuntu focal partner
+deb-src http://archive.canonical.com/ubuntu focal partner
+```
+
+# Emperor-os 
+## Emperor-os v2.5
+```bash
+deb http://ports.ubuntu.com/ubuntu-ports focal main restricted universe multiverse
+deb-src http://ports.ubuntu.com/ubuntu-ports focal main restricted universe multiverse
+
+deb http://ports.ubuntu.com/ubuntu-ports focal-updates main restricted universe multiverse
+deb-src http://ports.ubuntu.com/ubuntu-ports focal-updates main restricted universe multiverse
+
+deb http://ports.ubuntu.com/ubuntu-ports focal-backports main restricted universe multiverse
+deb-src http://ports.ubuntu.com/ubuntu-ports focal-backports main restricted universe multiverse
+
+deb http://ports.ubuntu.com/ubuntu-ports focal-security main restricted universe multiverse
+deb-src http://ports.ubuntu.com/ubuntu-ports focal-security main restricted universe multiverse
+
+deb http://archive.canonical.com/ubuntu focal partner
+deb-src http://archive.canonical.com/ubuntu focal partner
+```
+
+
 # Debian 
 ## Debian 12 (Bookworm ) -- Full sources.list
 
@@ -292,6 +331,32 @@ deb-src https://deb.parrot.sh/parrot/ parrot-security main contrib non-free
 deb https://deb.parrot.sh/parrot parrot-backports main contrib non-free
 deb-src https://deb.parrot.sh/parrot parrot-backports main contrib non-free
 ```
+
+
+
+# MX Linux 
+## MX Linux 23
+```bash
+# MX Community Main and Test Repos
+
+deb http://mxrepo.com/mx/repo/ bookworm main non-free
+
+deb http://mxrepo.com/mx/testrepo/ bookworm test
+
+deb http://mxrepo.com/mx/repo/ bookworm ahs
+
+deb http://deb.debian.org/debian/ bookworm-updates main contrib non-free non-free-firmware
+
+# Debian Stable
+
+deb http://deb.debian.org/debian bookworm main contrib non-free
+deb http://security.debian.org/debian-security bookworm-security main contrib non-free non-free-firmware
+#deb-src http://deb.debian.org/debian bookworm main contrib non-free
+
+#Stable backports
+#deb http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware
+```
+
 
 # PureOS 
 ## PureOS byzantium codename
