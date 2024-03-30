@@ -316,6 +316,11 @@ deb http://http.kali.org/kali kali-experimental main contrib non-free non-free-f
 ```bash
 deb http://http.kali.org/kali kali-bleeding-edge main contrib non-free non-free-firmware
 ```
+##Error:
+The following signatures couldn't be verified because the public key is not available: NO_PUBKEY ED444FF07D8D0BF6
+##fix:
+gpg --keyserver pgpkeys.mit.edu --recv-key  ED444FF07D8D0BF6
+gpg -a --export ED444FF07D8D0BF6 | sudo apt-key add -
 
 # parrot Linux
 ```bash
