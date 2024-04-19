@@ -114,34 +114,24 @@ deb-src http://archive.canonical.com/ubuntu focal partner
 ## Debian 12 (Bookworm ) -- Full sources.list
 
 ```bash
-deb http://deb.debian.org/debian bookworm main non-free-firmware 
-deb-src http://deb.debian.org/debian bookworm main non-free-firmware 
+deb http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware
 
-deb http://deb.debian.org/debian-security/ bookworm-security main non-free-firmware 
-deb-src http://deb.debian.org/debian-security/ bookworm-security main non-free-firmware 
+deb-src http://deb.debian.org/debian bookworm main contrib non-free non-free-firmware
 
-deb http://deb.debian.org/debian bookworm-updates main non-free-firmware
-deb-src http://deb.debian.org/debian bookworm-updates main non-free-firmware
+deb http://deb.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware
+
+deb-src http://deb.debian.org/debian-security/ bookworm-security main contrib non-free non-free-firmware
+
+deb http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware
+
+deb-src http://deb.debian.org/debian bookworm-updates main contrib non-free non-free-firmware
+
+
+deb http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware
+
+deb-src http://deb.debian.org/debian bookworm-backports main contrib non-free non-free-firmware
 ```
-
-# debian 12 contrib
-
-```bash
-deb http://deb.debian.org/debian/ bookworm contrib main non-free non-free-firmware
-deb-src http://deb.debian.org/debian/ bookworm contrib main non-free non-free-firmware
-
-deb http://deb.debian.org/debian/ bookworm-updates contrib main non-free non-free-firmware
-deb-src http://deb.debian.org/debian/ bookworm-updates contrib main non-free non-free-firmware
-
-deb http://deb.debian.org/debian/ bookworm-proposed-updates contrib main non-free non-free-firmware
-deb-src http://deb.debian.org/debian/ bookworm-proposed-updates contrib main non-free non-free-firmware
-
-deb http://deb.debian.org/debian/ bookworm-backports contrib main non-free non-free-firmware
-deb-src http://deb.debian.org/debian/ bookworm-backports contrib main non-free non-free-firmware
-
-deb http://deb.debian.org/debian-security/ bookworm-security contrib main non-free non-free-firmware
-deb-src http://deb.debian.org/debian-security/ bookworm-security contrib main non-free non-free-firmware
-```
+ 
 
 ## Debian 11 main stable
 ```bash
